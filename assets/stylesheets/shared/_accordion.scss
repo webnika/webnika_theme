@@ -1,0 +1,115 @@
+#accordion {
+	margin: 10px auto 30px auto;
+	text-align: left;
+}
+#accordion label {
+	padding: 5px 20px;
+	position: relative;
+	z-index: 20;
+	display: block;
+	height: 45px;
+	cursor: pointer;
+	line-height: 37px;
+	font-size: 19px;
+	color: #333;;
+	background: $color__light;
+	box-shadow: 
+		0px 0px 0px 1px rgba(155,155,155,0.3), 
+		1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
+		0px 2px 2px rgba(0,0,0,0.1);
+	transition: all 0.5s;
+
+	/* MINUS ICON */
+	&:after {
+		content: '\f056';
+		font-family: "FontAwesome";
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		right: 13px;
+		top: 7px;
+		color: #333;
+	}
+	&:hover:after {
+		color: #fff;
+	}
+}
+#accordion label:hover {
+	background: $color__primary;
+	color: #fff;
+}
+#accordion input:checked + label,
+#accordion input:checked + label:hover {
+	background: $color__primary;
+	color: #fff;
+	text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
+	box-shadow: 
+		0px 0px 0px 1px rgba(155,155,155,0.3), 
+		0px 2px 2px rgba(0,0,0,0.1);
+}
+/* PLUS ICON */
+#accordion input:checked + label:after {
+	content: '\f055';
+	color: #fff;
+}
+#accordion input {
+	display: none;
+}
+#accordion article {
+	background: rgba(255, 255, 255, 0.5);
+	margin-top: -1px;
+	overflow: hidden;
+	max-height: 0px;
+	position: relative;
+	z-index: 10;
+	transition: max-height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+#accordion article div {
+	padding: 20px;
+}
+#accordion input:checked ~ article {
+	transition: max-height 0.5s ease-in-out, box-shadow 0.1s linear;
+	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}
+#accordion input:checked ~ article {
+	max-height: 1000px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+	/* Zrusit chovani accordionu - obsah nechvamae rozbaleny*/
+    #accordion {
+    	label {
+    		height: auto;
+    		line-height: 26px;
+    		
+    		&:after {
+    			display: none;
+    		}
+    	}
+    	article {
+    		height: auto;
+    		max-height: initial;
+    		box-shadow: none;
+    		border: none;
+    		background: transparent;
+
+    		div {
+    			padding: 0;
+    		}
+    	}
+    	input:checked~article {
+    		box-shadow: none;
+    	}
+    	label:hover,
+    	input:checked+label, 
+    	input:checked+label:hover,
+    	label {
+    		background: transparent;
+    		color: $color__primary;
+    		box-shadow: none;
+    		padding-left: 0;
+    	}
+    }
+
+}

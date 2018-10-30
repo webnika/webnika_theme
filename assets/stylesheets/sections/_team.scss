@@ -1,0 +1,18 @@
+.team {
+	padding: 2rem 0 4rem 0;
+	
+	.name {
+		font-size: 1.2rem;
+    	margin: 1rem 0 0 0;
+	}
+
+	&-list {
+		.grow > a,
+		img {
+			display: block;
+			border-radius: 50%;
+			overflow: hidden;
+			box-shadow: 1px 2px 25px -4px #ccc;
+		}
+	}
+}

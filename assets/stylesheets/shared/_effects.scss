@@ -1,0 +1,7 @@
+.grow {
+	@include grow;
+
+	&:hover {
+		@include growHover;
+	}
+}

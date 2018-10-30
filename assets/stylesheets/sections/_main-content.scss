@@ -1,0 +1,12 @@
+.main-content {
+	img {
+		margin: 15px 0;
+
+		&.alignleft {
+			margin-right: 1.5em;
+		}
+		&.alignright {
+			margin-left: 1.5em;
+		}
+	}
+}

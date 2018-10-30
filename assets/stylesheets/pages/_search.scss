@@ -1,0 +1,24 @@
+/* SEARCH */
+.search {
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	margin-top: 15px;
+
+	input[type="search"] {
+		height: 35px;
+	}
+	.search-submit {
+		background: $color__primary;
+		color: #fff;
+	    margin: 0;
+	    padding: 15px 20px;
+	    border: none;
+	    top: -1px;
+	    position: relative;
+	}
+}
+.no-results {
+	padding-bottom: 40px;
+}

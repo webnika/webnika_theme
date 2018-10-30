@@ -1,0 +1,63 @@
+.page-template-basic-page {
+	padding-top: 90px;
+
+	.wpcf7 {
+		padding: 40px;
+		background: #eee;
+		position: relative;
+
+		label,
+		label span,
+		label input {
+			width: 100%;
+		}
+		.wpcf7-list-item {
+			clear: both;
+			width: auto;
+			display: block;
+
+			label span, 
+			label, 
+			label input {
+				width: auto;
+			}
+		}
+		.wpcf7-form-control.wpcf7-previous {
+			background: transparent;
+			border: none;
+			font-size: 16px;
+			color: $color__primary;
+			text-decoration: underline;
+		}
+		.first-back {
+			position: absolute;
+			left: 40px;
+			top: 0px;
+		}
+		.last-back {
+			position: absolute;
+			left: 40px;
+			bottom: 10px;
+		}
+		
+		h2 {
+			margin-top: 0;
+			line-height: 40px;
+			small {
+				font-size: 80%;
+				color: $color__primary;
+			}
+		}
+		h3 {
+			color: #000;
+			
+			&:after {
+				display: none;
+			}
+		} 
+		h4 {
+			margin-top: 30px;
+			text-transform: uppercase;
+		}
+	}
+}

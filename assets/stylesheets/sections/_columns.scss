@@ -1,0 +1,38 @@
+.columns {
+	h3 {
+		text-align: left;
+
+		&:after {
+			display: none;
+		}
+	}
+	.item-1 .item {
+		float: left;
+	}
+	.item-2 {
+		text-align: center;
+
+		.item {
+			display: inline-block;
+			text-align: left;
+		}
+	}
+	.item-3 .item {
+		float: right;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    /* Vynulovat floatovani */
+    .columns {
+    	h3,
+        .item-1 .item,
+        .item-2 .item,
+        .item-3 .item {
+        	float: none;
+        	text-align: center;
+        }
+    }
+
+}

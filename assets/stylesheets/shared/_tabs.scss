@@ -1,0 +1,30 @@
+.tab-section {
+  padding: 3rem 0;
+
+  h3 {
+    text-align: left;
+  }
+}
+
+.tab-nav {
+
+  a {
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 1rem;
+    background-color: rgba($color__primary,.7);
+    text-transform: uppercase;
+
+    &.active,
+    &:hover {
+       background-color: rgba($color__primary,1);
+       text-decoration: none;
+    }
+  }
+}
+
+.tab-content {
+  padding: 1em;
+}

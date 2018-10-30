@@ -1,0 +1,70 @@
+/* SLUZBY */
+#services {
+	padding: 40px 0 60px 0;
+	text-align: center;
+
+	a.btn {
+		margin-top: 40px;
+	}
+}
+
+/* REFERENCE */
+#references {
+	display: none;
+	padding: 3rem 0;
+	position: relative;
+	margin-top: 5rem;
+
+	.container {
+		background: transparent;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	
+	h2 {
+		color: #666;
+	    max-width: 400px;
+	    margin-right: 5rem;
+	    text-align: right;
+	    padding: 0 0 0 3rem;
+	    position: relative;
+	    line-height: 3rem;
+
+		span {
+		    background: #fff;
+		    display: block;
+		    position: relative;
+		    z-index: 100;
+		    padding: 1rem;
+		}
+
+		&:after {
+		    content: "";
+		    position: absolute;
+		    top: -24px;
+		    right: 27px;
+		    width: 86%;
+		    height: 14rem;
+		    border: 3px solid rgba(89, 206, 212, 0.42);
+		}
+	}
+	.swiper-pagination-bullet {
+	    background: #ccc;
+	}
+	.swiper-pagination-bullet-active {
+	    background: #fff;
+	}
+	.swiper-pagination {
+		display: none;
+	}
+}
+
+#our-team-wrap {
+	.container {
+		/*border-top: 1px solid #eee;*/
+	    padding-top: 2rem;
+	    margin-top: 1rem;
+	    margin-top: 6rem;
+    }
+}

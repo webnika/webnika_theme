@@ -1,0 +1,177 @@
+.single-team {
+	position: relative; 
+
+	#single-team-content {
+		padding: 1.5rem 0 0 0;
+		margin-top: 5.5rem;
+
+		.team-mainText {
+			padding-right: 60px;
+			font-size: 18px;
+
+			h3 {
+				color: #000;
+				font-size: 1.2rem;
+				display: flex;
+				align-items: center;
+
+				.fa {
+					font-size: 1.5rem;
+				    color: #ffffff;
+				    text-align: left;
+				    background: #ffc727;
+				    padding: 8px;
+				    border-radius: 50%;
+				    margin-right: 1.5rem;
+				}
+			}
+
+			.h5 {
+				margin-bottom: 1rem;
+			}
+		}
+
+		.team-shortText {
+			color: #000;
+		    text-align: right;
+		    font-size: 2rem;
+		    line-height: 2.8rem;
+		    font-weight: 200;
+	        align-items: center;
+    		display: flex;
+    		min-height: 250px;
+
+		    &:after {
+	    	    content: "";
+			    position: absolute;
+			    top: 2px;
+			    right: 81px;
+			    width: 86%;
+			    height: 81%;
+			    border: 3px solid rgba($color__secondary,.3);
+		    }
+
+		    &-content {
+    	        position: relative;
+			    top: -20px;
+			    z-index: 100;
+			    background: #fff;
+		    }
+
+		    p {
+    	    	padding: 0 0 0 2rem;
+			    margin: 0;
+		    }
+		}
+	}	
+
+	#portfolio {
+		border-top: 1px solid #eee;
+		margin-top: 4rem;
+		position: relative;
+
+		h2 {
+			margin-bottom: 1rem;
+			color: $color__primary;
+		}
+
+		header {
+			margin-bottom: 2.5rem;
+		}
+
+		.tab-content-wrap {
+			.tab-content {
+				display: flex;
+				flex-wrap: wrap;
+				position: relative;
+				padding: 1rem;
+				background: #f7f7f7;
+
+				&::-webkit-scrollbar {
+				    width: .7rem;
+				    margin-right: 2rem;
+				}
+				 
+				&::-webkit-scrollbar-track {
+				    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+				    border-radius: 20px;
+				    background: #fff;
+				}
+				 
+				&::-webkit-scrollbar-thumb {
+				  background-color: darkgrey;
+				  outline: 1px solid slategrey;
+				  background: #aaa;
+			   	  border-radius: 20px;
+				}
+
+				.program-item {
+					display: flex;
+					flex-direction: column;
+					width: calc(50% - 2rem);
+					margin: 1rem;
+				}
+			}
+		}
+
+		.member-img {
+		    background: transparent;
+		    widht: auto;
+
+		    img {
+		    	position: absolute;
+		    	bottom: 0;
+		    	height: 450px;
+		    	width: auto;
+		    }
+		}
+
+		.program-item {
+			margin-top: .5rem;
+			margin-bottom: .5rem;
+			border-bottom: 1px solid #eee;
+
+			h4 {
+				font-size: 16px;
+				margin: 0;
+
+				a {
+					font-weight: 900;
+				}
+			}
+
+			.organizer {
+				font-size: 13px;
+				color: #666;
+				margin-bottom: 10px;
+			}
+
+			.perex {
+				display: inline-block;
+				font-size: 14px;
+				font-style: normal;
+				min-width: 60%;
+				padding-bottom: 1rem;
+
+				p {
+					margin-bottom: 10px;
+				}
+			}
+
+			.url {
+				font-size: 13px;
+				font-style: italic;
+				font-weight: 500;
+			}
+
+			&:last-child {
+				border: 0;
+			}
+		}
+	}
+	
+
+	.team {
+		padding: 0;
+	}
+}

@@ -1,0 +1,32 @@
+.gallery {
+	margin-bottom: 1.5em;
+	width: 100%;
+	padding-top: 2rem;
+
+	&-list {
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: space-between;
+	    padding: 0;
+	    margin: 0;
+	    width: 100%;
+	}
+
+	&-item {
+	    height: 250px;
+	    list-style-type: none;
+	    flex-grow: 1;
+	    padding: 0;
+	    margin: 0;
+
+	    &::before {
+	    	display: none;
+	    }
+
+		img {
+			object-fit: cover;
+			height: 100%;
+		}
+	}
+}
+

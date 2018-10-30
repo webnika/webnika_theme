@@ -1,0 +1,23 @@
+{
+  "name": "epskuryr",
+  "version": "0.0.1",
+  "dependencies": {
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-notify": "latest",
+    "grunt-contrib-watch": "latest"
+  },
+  "main": "gruntfile.js",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-sass": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Veronika Petrikova",
+  "license": "ISC",
+  "description": ""
+}

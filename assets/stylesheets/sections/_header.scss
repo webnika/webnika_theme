@@ -1,0 +1,136 @@
+/* INFO PANEL */
+.info-panel {
+    background: $color__primary;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+
+#masthead {
+    background: rgba($color__primary,1);
+    z-index: 10000;
+    height: 70px;
+    width: 100%;
+    color: #fff;
+    position: relative;
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3c9ea2+1,60dae0+67,38adbc+100 */
+    background: #3c9ea2; /* Old browsers */
+    background: -moz-linear-gradient(left, #3c9ea2 1%, #60dae0 67%, #38adbc 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #3c9ea2 1%,#60dae0 67%,#38adbc 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #3c9ea2 1%,#60dae0 67%,#38adbc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c9ea2', endColorstr='#38adbc',GradientType=1 ); /* IE6-9 */
+    
+	.header-content {
+        padding: 10px 40px;
+	}
+
+    .custom-logo-link, 
+    .site-branding {
+    	float: left;
+    }
+
+    .custom-logo-link {
+        display: block;
+        width: 100%;
+        height: 50px;
+
+        .custom-logo {
+            width: auto;
+            height: 100%;
+        }
+    }
+    
+    .site-branding {
+
+        display: none;
+        
+        h1.site-title {
+            margin-bottom: 0;
+            margin-top: 0;
+            font-size: 24px;
+            letter-spacing: 2px;
+            text-indent: -1000px;
+            line-height: 10px;
+
+            a {
+                color: #fff;
+
+                &:hover, 
+                &:active,
+                &:focus {
+                    color: $color__secondary;
+                    text-transform: none;
+                }
+            }
+        }
+
+        .site-description {
+            font-size: 14px;
+            margin-bottom: 0;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+/* HOME HEADER: hlavnicka pro uvodni stranku ma pruhledne pozadi */
+.home header {
+    background: transparent;
+    transition: background 0.5s ease-in-out;
+
+    &.after-scroll {
+        background: rgba(0,0,0,0.9);
+    }
+}
+
+.admin-bar header {
+	top: 0;
+}
+
+
+
+
+/*-----------------------------------------------------------------
+    
+========   RESPONSIVE STYLES   ===================================
+
+------------------------------------------------------------------*/
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+
+}
+
+/* Large devices (large desktops, 1500px and up) */
+@media (max-width: 1500px) { 
+    header#masthead.show-nav {
+        position:absolute;
+        overflow-y: scroll;
+        height: 100%;
+    }
+    
+    .home {
+        header {
+            height: 84px;
+            background: #000;
+        }
+    }
+
+    /* logo */
+    header .custom-logo-link {
+        margin-top: 0;
+
+        .custom-logo {
+            height: 65px;
+        }
+    } 
+}
